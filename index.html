@@ -3,18 +3,19 @@
 <head>
     <meta charset="UTF-8 ">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Rinterio</title>
     <!-- daisyUI cdn -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- font awesome cdn -->
     <script src="https://kit.fontawesome.com/852dbc555e.js" crossorigin="anonymous"></script>
 </head>
-<body>
+<body class="">
     <!-- header part -->
-    <header class="container mx-auto">
-        <div class="navbar bg-base-100">
-            <div class="navbar-start">
+    <header class="bg-slate-100">
+        <!-- Navbar design Start -->
+        <div class="container mx-auto navbar p-6 lg:p-0">
+            <div class="navbar">
               
               <div>
                 <i class="fa-solid -rotate-45 rounded-full p-2 bg-green-300 text-black fa-arrow-right"></i>
@@ -33,27 +34,24 @@
 
               </ul>
             </div>
-            <div class="navbar-end">
-              <a class="btn">Button</a>
+            <div class="navbar-end gap-4 hidden lg:flex">
+                <i class="fa-solid rounded-full p-2 bg-white fa-magnifying-glass"></i>
+                <i class="fa-solid rounded-full p-2 bg-white fa-cart-shopping"></i>
+                <div class="flex">
+                    <a class="btn bg-green-400 rounded-3xl">Book Consult
+                        <i class="fa-solid -rotate-45 rounded-full p-2 bg-black text-green-300 fa-arrow-right"></i>
+                    </a>
+                </div>
+              
             </div>
             <div class="dropdown">
-                <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    class="h-5 w-5"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke="currentColor">
-                    <path
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      stroke-width="2"
-                      d="M4 6h16M4 12h8m-8 6h16" />
-                  </svg>
+                <div tabindex="0" role="button" class="btn btn-ghost  lg:hidden">
+                    <i class="fa-solid fa-bars"></i>
+                  
                 </div>
                 <ul
                   tabindex="0"
-                  class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
+                  class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[2] mt-3 w-52 p-2 shadow">
                   <li class="text-slate-400"><a>Home</a></li>
                 <li class="text-slate-400"><a>Services</a></li>  
                 <li class="text-slate-400"><a>Portfolio</a></li>  
@@ -62,6 +60,17 @@
                 </ul>
               </div>
           </div>
+        <!-- Navbar design Finish -->
+        <!-- Banner Section Start -->
+        <div class="container w-full lg:w-[60%] mx-auto banner text-center justify-center pb-10">
+            <img class="mx-auto pb-5" src="./assets/banner.png" alt="">
+            <h2 class="text-2xl pb-5 lg:text-6xl font-bold">A barn house of this design has a striking appearance</h2>
+            <p class="pb-5">The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents, and large windows that flood the space with natural light.</p>
+            <a class="btn bg-green-200 rounded-3xl ">View Details
+                <i class="fa-solid -rotate-45 rounded-full p-2 bg-green-400 text-black fa-arrow-right"></i>
+            </a>
+        </div>
+        <!-- Banner Section End -->
 
     </header>
     <!-- main part -->
